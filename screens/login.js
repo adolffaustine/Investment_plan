@@ -22,7 +22,7 @@ const Login = ({ navigation }) => {
         <View style={styles.container}>
           <View style={styles.image}>
             <Image
-              source={require("../assets/login.png")}
+              source={require("../assets/login1.png")}
               width={100}
               height={100}
             />

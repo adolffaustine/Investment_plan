@@ -28,27 +28,27 @@ const Card = (props) => {
       >
         <View style={styles.card_container}>
           <TouchableOpacity activeOpacity={0.6}>
-            <Image source={require("../assets/currencies/dolar.png")} />
+            <Image source={require("../assets/currencies/15.jpeg")} />
           </TouchableOpacity>
 
           <TouchableOpacity activeOpacity={0.6} style={{ paddingLeft: 5 }}>
-            <Image source={require("../assets/currencies/euro.png")} />
+            <Image source={require("../assets/currencies/4.jpeg")} />
           </TouchableOpacity>
 
           <TouchableOpacity activeOpacity={0.6} style={{ paddingLeft: 5 }}>
-            <Image source={require("../assets/currencies/bitcoin.png")} />
+            <Image source={require("../assets/currencies/12.jpeg")} />
           </TouchableOpacity>
 
           <TouchableOpacity activeOpacity={0.6} style={{ paddingLeft: 5 }}>
-            <Image source={require("../assets/currencies/dolar.png")} />
+            <Image source={require("../assets/currencies/16.jpeg")} />
           </TouchableOpacity>
 
           <TouchableOpacity activeOpacity={0.6} style={{ paddingLeft: 5 }}>
-            <Image source={require("../assets/currencies/euro.png")} />
+            <Image source={require("../assets/currencies/14.jpeg")} />
           </TouchableOpacity>
 
           <TouchableOpacity activeOpacity={0.6} style={{ paddingLeft: 5 }}>
-            <Image source={require("../assets/currencies/bitcoin.png")} />
+            <Image source={require("../assets/currencies/1.jpeg")} />
           </TouchableOpacity>
         </View>
       </ScrollView>

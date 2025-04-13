@@ -30,15 +30,46 @@ function CustomDrawerContent(props) {
         <Font size={22}>My Asset</Font>
       </View>
       <DrawerItem
-        label="Asset"
+        label="Dashboard"
         onPress={() => props.navigation.toggleDrawer()}
-        option={{ headerShown: true }}
+        activeTintColor="black"
+        inactiveBackgroundColor="#eee"
+        activeBackgroundColor="#992"
+        option={{ headerShown: true, }}
       />
       <DrawerItem
-        label="Toggle drawer"
+        label="Income Details"
+        onPress={() => props.navigation.navigate("CreateInvestment")}
+        inactiveTintColor="black"
+        inactiveBackgroundColor="#fff"
+        activeBackgroundColor="#992"
+      />
+      <DrawerItem
+        label="Total Asset Portifolio"
         onPress={() => props.navigation.toggleDrawer()}
-        inactiveTintColor="red"
-        inactiveBackgroundColor="#eee"
+        inactiveTintColor="black"
+        inactiveBackgroundColor="#fff"
+        activeBackgroundColor="#992"
+      />
+       <DrawerItem
+        label="Investment Plan"
+        onPress={() => props.navigation.toggleDrawer()}
+        inactiveTintColor="black"
+        inactiveBackgroundColor="#fff"
+        activeBackgroundColor="#992"
+      />
+       <DrawerItem
+        label="Who fits for your Investment"
+        onPress={() => props.navigation.toggleDrawer()}
+        inactiveTintColor="black"
+        inactiveBackgroundColor="#fff"
+        activeBackgroundColor="#992"
+      />
+       <DrawerItem
+        label="Trends in Investment"
+        onPress={() => props.navigation.toggleDrawer()}
+        inactiveTintColor="black"
+        inactiveBackgroundColor="#fff"
         activeBackgroundColor="#992"
       />
       <Button

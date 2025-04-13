@@ -2,13 +2,14 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { View, Text } from "react-native";
 
-import HomeDrawer from "./components/Drawers/Home";
+
 
 import {
   MaterialIcons,
   FontAwesome,
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
+import CreateInvestment from "./screens/createInvestment";
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +21,7 @@ function TestScreen() {
   );
 }
 
-export default function App({ navigation }) {
+export default function Asset({ navigation }) {
   return (
     <>
       <Tab.Navigator
@@ -30,8 +31,8 @@ export default function App({ navigation }) {
         screenOptions={{}}
       >
         <Tab.Screen
-          name="Home"
-          component={HomeDrawer}
+          name="CreateInvestment"
+          component={TestScreen}
           options={{
             tabBarIcon: ({ focused }) =>
               focused ? (

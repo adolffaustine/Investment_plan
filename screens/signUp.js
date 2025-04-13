@@ -13,9 +13,10 @@ import Font from "../hooks/font";
 const SignUp = ({ navigation }) => {
   return (
     <View style={styles.container}>
+     <Font size={34} weight={"bold"} align={"center"}>AI Financial Planner</Font> 
       <Image source={require("../assets/signUp/2.jpeg")} />
 
-      <Font size={34} weight={"bold"} align={"center"}>
+      <Font size={26} weight={"bold"} align={"center"}>
         Stay on top of your finance with us.
       </Font>
 

@@ -26,7 +26,7 @@ const Home = (props) => {
         </View>
 
         <View style={{ marginTop: 32 }}>
-          <Font size={34}>Welcome, Jessie.</Font>
+          <Font size={34}>Welcome, Adolf.</Font>
         </View>
 
         <View style={styles.portfolio_container}>
@@ -39,11 +39,11 @@ const Home = (props) => {
 
             <View style={styles.portfolio_content}>
               <Font size={32} color={"#fff"} weight={"bold"}>
-                N203,935
+                Tshs 203,935
               </Font>
 
               <View style={styles.invest}>
-                <TouchableOpacity activeOpacity={0.6}>
+                <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("CreateInvestment") }>
                   <Font size={14} color="#31A078" spacing={1} weight={"bold"}>
                     Invest now
                   </Font>
@@ -54,8 +54,8 @@ const Home = (props) => {
         </View>
 
         <View style={styles.plans_container}>
-          <Font size={22} weight={"bold"}>
-            Best Plans
+          <Font size={19} weight={"bold"}>
+            Best Investment Plans
           </Font>
 
           <TouchableOpacity>
@@ -88,7 +88,7 @@ const Home = (props) => {
 
               <View style={styles.guide_description}>
                 <Font size={14} color={"#4F4F4F"} spacing={1}>
-                  This is how you set your foot for 2020 Stock market
+                  This is how you set your foot for 2025 Stock market
                   recession.What’s next...
                 </Font>
               </View>
@@ -115,7 +115,7 @@ const Home = (props) => {
               <View style={styles.guide_description}>
                 <Font size={14} color={"#4F4F4F"} spacing={1}>
                   What do you like to see? It’s a very different market from
-                  2018. The way...
+                  2024. The way...
                 </Font>
               </View>
             </View>
