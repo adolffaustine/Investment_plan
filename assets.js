@@ -31,8 +31,8 @@ export default function Asset({ navigation }) {
         screenOptions={{}}
       >
         <Tab.Screen
-          name="CreateInvestment"
-          component={TestScreen}
+          name="CreateInvestments"
+          component={CreateInvestment}
           options={{
             tabBarIcon: ({ focused }) =>
               focused ? (

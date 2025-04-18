@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Button, SafeAreaView } from "react-native";
-import SafeViewAndroid from "../../components/SafeViewAndroid";
+import SafeViewAndroid from "../SafeViewAndroid";
 import "react-native-gesture-handler";
 import {
   createDrawerNavigator,
@@ -39,7 +39,7 @@ function CustomDrawerContent(props) {
       />
       <DrawerItem
         label="Income Details"
-        onPress={() => props.navigation.navigate("CreateInvestment")}
+        onPress={() => props.navigation.navigate("CreateInvestments")}
         inactiveTintColor="black"
         inactiveBackgroundColor="#fff"
         activeBackgroundColor="#992"
@@ -97,7 +97,7 @@ function HomeDrawer() {
         width: 300,
       }}
     >
-      <Drawer.Screen name="Home" component={HomeScreen} />
+      <Drawer.Screen name="Homee" component={HomeScreen} />
     </Drawer.Navigator>
   );
 }

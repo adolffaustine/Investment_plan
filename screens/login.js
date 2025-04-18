@@ -47,7 +47,7 @@ const Login = ({ navigation }) => {
           <View style={styles.login}>
             <TouchableOpacity
               activeOpacity={0.6}
-              onPress={() => navigation.navigate("Home")}
+              onPress={() => navigation.navigate("Homes")}
             >
               <CustomButton title={"Login"} />
             </TouchableOpacity>

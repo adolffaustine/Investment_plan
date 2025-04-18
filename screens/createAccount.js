@@ -62,7 +62,7 @@ const CreateAccount = ({ navigation }) => {
         </TouchableWithoutFeedback>
         <TouchableOpacity
           activeOpacity={0.6}
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("Homes")}
         >
           <CustomButton title={"Create account"} />
         </TouchableOpacity>

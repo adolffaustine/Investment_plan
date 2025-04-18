@@ -10,7 +10,7 @@ import App from "../main";
 import CreateAccount from "../screens/createAccount";
 import Login from "../screens/login";
 import CreateInvestment from "../screens/createInvestment";
-import Asset from "../assets";
+import InvestmentPlan from "../screens/InvestmentPlan"
 
 const Stack = createStackNavigator();
 
@@ -37,7 +37,7 @@ function Main() {
           options={{ headerTitle: "Create Account", headerShown: true }} 
         />
         <Stack.Screen 
-          name="Home" 
+          name="Homes" 
           component={App} 
           options={{ headerTitle: "Welcome Home", headerShown: false }} 
         />
@@ -47,9 +47,15 @@ function Main() {
           options={{ headerTitle: "Login", headerShown: true }} 
         />
         <Stack.Screen
-          name="CreateInvestment"
-          component={Asset}
+          name="CreateInvestments"
+          component={CreateInvestment}
           options={{ headerTitle: "Financial Income Details", headerShown: true}}
+
+        />
+        <Stack.Screen
+          name="InvestmentPlan"
+          component={InvestmentPlan}
+          options={{ headerTitle: "Investment Plan", headerShown: true}}
 
         />
       </Stack.Navigator>

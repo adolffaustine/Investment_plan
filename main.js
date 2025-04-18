@@ -3,7 +3,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { View, Text } from "react-native";
 
 import HomeDrawer from "./components/Drawers/Home";
-
+import Product from "./screens/product";
+import Account from "./screens/account";
+import Transaction from "./screens/Transaction";
 import {
   MaterialIcons,
   FontAwesome,
@@ -43,7 +45,7 @@ export default function App({ navigation }) {
         />
         <Tab.Screen
           name="Product"
-          component={TestScreen}
+          component={Product}
           options={{
             tabBarIcon: ({ focused }) =>
               focused ? (
@@ -55,7 +57,7 @@ export default function App({ navigation }) {
         />
         <Tab.Screen
           name="Transaction"
-          component={TestScreen}
+          component={Transaction}
           options={{
             tabBarIcon: ({ focused }) =>
               focused ? (
@@ -67,7 +69,7 @@ export default function App({ navigation }) {
         />
         <Tab.Screen
           name="Account"
-          component={TestScreen}
+          component={Account}
           options={{
             tabBarIcon: ({ focused }) =>
               focused ? (

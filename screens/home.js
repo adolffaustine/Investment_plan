@@ -43,7 +43,7 @@ const Home = (props) => {
               </Font>
 
               <View style={styles.invest}>
-                <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("CreateInvestment") }>
+                <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("InvestmentPlan") }>
                   <Font size={14} color="#31A078" spacing={1} weight={"bold"}>
                     Invest now
                   </Font>
